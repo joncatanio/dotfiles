@@ -1,4 +1,4 @@
 source ~/.bashrc
 
-export PS1="\u \w $ "
+export PS1="\u@\h \w $ "
 export PATH=.:$PATH
