@@ -10,3 +10,5 @@ set shiftwidth=3
 
 set ruler
 set colorcolumn=80
+
+set hlsearch
