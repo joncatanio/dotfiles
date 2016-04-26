@@ -6,6 +6,8 @@ mkdir -p ~/.vim/colors
 ln -s ~/dotfiles/vim/colors/molokai.vim ~/.vim/colors/molokai.vim
 
 # Set up CoffeeScript syntax highlighting for vim.
+mkdir -p ~/.vim/syntax
+mkdir -p ~/.vim/ftdetect
 ln -s ~/dotfiles/vim/syntax/coffee.vim ~/.vim/syntax/coffee.vim
 ln -s ~/dotfiles/vim/ftdetect/coffee.vim ~/.vim/ftdetect/coffee.vim
 
