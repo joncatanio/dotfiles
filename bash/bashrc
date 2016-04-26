@@ -20,3 +20,6 @@ alias wifi="networksetup -setairportpower $WIFI_PORT"
 
 # Colors
 export LSCOLORS=gxBxhxDxcxhxhxhxhxcxcx
+
+# Transfer script alias
+alias transfer="/Users/JonCatanio/Projects/Utility\ Tools/SSH\ Scripts/transfer"
