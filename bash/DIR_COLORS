@@ -1,0 +1,9 @@
+# man dir_colors for more information about colors.
+
+FILE 37
+DIR 36;40
+LINK 1;31
+SOCK 37
+ORPHAN 37
+EXEC 32;1
+ORPHAN 37;1;5
