@@ -1,4 +1,4 @@
 source ~/.bashrc
 
 export PS1="\u@\h \w $ "
-export PATH=.:/Users/JonCatanio/Library/Android/sdk/platform-tools:$PATH
+export PATH=$PATH:/Users/JonCatanio/Library/Android/sdk/platform-tools
