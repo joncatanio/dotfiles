@@ -15,6 +15,9 @@ ln -s ~/dotfiles/vim/ftdetect/coffee.vim ~/.vim/ftdetect/coffee.vim
 ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
 ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 
+# For Arch Linux session configuration link.
+ln -s ~/dotfiles/bash/profile ~/.xprofile
+
 # NOTE: These aren't necessary for Mac OS X, comment out.
 ln -s ~/dotfiles/bash/DIR_COLORS ~/.dir_colors
 ln -s ~/dotfiles/bash/Xresources ~/.Xresources
