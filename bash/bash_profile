@@ -7,3 +7,11 @@ parse_git_branch() {
 
 export PS1="\u@\h \w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 export PATH=$PATH:/Users/JonCatanio/Library/Android/sdk/platform-tools
+
+# Graphics env variables.
+export GLM_INCLUDE_DIR=/usr/local/Cellar/glm/0.9.8.1/include
+export GLFW_DIR=/Users/JonCatanio/open-source-bin/glfw-3.2.1
+export GLEW_DIR=/usr/local/Cellar/glew/2.0.0
+
+# Audio Api Variables
+export FMOD_DIR=/Users/JonCatanio/open-source-bin/FMOD_API
