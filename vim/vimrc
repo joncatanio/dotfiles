@@ -1,15 +1,49 @@
-set number
-set mouse=a
+" Author: Jonathan Catanio
+" Description: Global settings for all files (may be overriden by ftplugin)
 
-syntax on
+" Start vim-plug code
+call plug#begin('~/.vim/plugged')
+
+" Git wrapper for vim
+Plug 'tpope/vim-fugitive'
+
+" Initialize plugin system
+call plug#end()
+
+" vim-plug sets filetype, plugin, and indent; turn off indent
+filetype indent off
+
+" Custom settings
+set title " change the terminal title
+
+set number  " Show line numbers
+set mouse=a " Enable mouse
+
+syntax on   " Enable syntax highlighting
 colorscheme molokai
 let g:molokai_original=1
 
-set tabstop=3
-set shiftwidth=3
-set expandtab
+set nowrap        " Lines don't wrap
+set tabstop=3     " Tabs stop at three characters
+set softtabstop=0 " If non-zero, makes the <TAB> & <BS> keys feel like tabs
+set expandtab     " Tabs become spaces
+set shiftwidth=3  " Shifts only shift three spaces
+set backspace=indent,eol,start " Backspace over everything in insert mode
+set autoindent    " Auto indent
+set copyindent    " Use last line indentation, affects <BR> key
+set smarttab      " Insert new line tabs based on shiftwidth not tabstop
 
-set ruler
-set colorcolumn=80
+set ruler          " Shows the ruler at the bottom of the window
+set colorcolumn=80 " Draws column at 80 characters
 
-set hlsearch
+set hlsearch       " Highlight search terms
+set incsearch      " Highlight incrementally while searching
+
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.o " Don't auto-complete these files
+
+" List will mark any characters specified by `listchars`
+set list
+set listchars=tab:\ \ ,trail:·,extends:▶
+
+" File specific settings, most should be moved into after/ or ftplugin/
+autocmd filetype make set tabstop=3 shiftwidth=3 softtabstop=0 noexpandtab

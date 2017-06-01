@@ -1,0 +1,2 @@
+The after directory will be loaded after ftplugins has been sourced. This allows
+for overriding specific plugin settings.

@@ -15,3 +15,6 @@ export GLEW_DIR=/usr/local/Cellar/glew/2.0.0
 
 # Audio Api Variables
 export FMOD_DIR=/Users/JonCatanio/open-source-bin/FMOD_API
+
+# Custom Python3 Paths
+export PYTHONPATH=${PYTHONPATH}:/Users/JonCatanio/Projects/SearchEngine/
