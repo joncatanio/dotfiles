@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'              " Git wrapper for vim
 Plug 'vim-airline/vim-airline'         " Lightweight status/tabline
 Plug 'vim-airline/vim-airline-themes'  " Themes for vim-airline
+"Plug 'scrooloose/syntastic'            " Syntax checking
 
 " Initialize plugin system
 call plug#end()
@@ -14,16 +15,13 @@ call plug#end()
 " vim-plug sets filetype, plugin, and indent; turn off indent
 filetype indent off
 
-" Custom Plugin settings
-let g:airline_theme='tomorrow'
-let g:airline#extensions#tabline#enabled=1
-
 " Custom VIM settings
-set title " change the terminal title
+set title      " change the terminal title
 
-set laststatus=2 " Show status line
-set number       " Show line numbers
-set mouse=a      " Enable mouse
+set laststatus=2   " Show status line
+set number         " Show line number on cursor
+set relativenumber " Show relative line numbers
+set mouse=a        " Enable mouse
 
 syntax on   " Enable syntax highlighting
 colorscheme molokai
@@ -53,3 +51,21 @@ set listchars=tab:\ \ ,trail:·,extends:▶
 
 " File specific settings, most should be moved into after/ or ftplugin/
 autocmd filetype make set tabstop=3 shiftwidth=3 softtabstop=0 noexpandtab
+
+" Custom Plugin settings
+" vim-airline
+let g:airline_theme='tomorrow'
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#syntastic#enabled=1
+let g:airline_powerline_fonts=1 " Make sure powerline fonts are installed
+
+" syntastic
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 0
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_error_symbol = "➤"
+"hi SyntasticError       ctermfg=231 ctermbg=226
+"hi SyntasticWarning     ctermfg=231 ctermbg=226
+"hi SyntasticErrorSign   ctermfg=123 ctermbg=123
+"hi SyntasticWarningSign ctermfg=123 ctermbg=123
