@@ -4,6 +4,7 @@
 " Start vim-plug code
 call plug#begin('~/.vim/plugged')
 
+Plug 'tomasr/molokai'                  " Molokai color scheme
 Plug 'tpope/vim-fugitive'              " Git wrapper for vim
 Plug 'vim-airline/vim-airline'         " Lightweight status/tabline
 Plug 'vim-airline/vim-airline-themes'  " Themes for vim-airline
