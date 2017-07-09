@@ -1,4 +1,8 @@
-source ~/.bashrc
-
-export PS1="\u@\h \w $ "
-export PATH=$PATH
+#source ~/.bashrc
+#
+#export PS1="\u@\h \w $ "
+#export PATH=$PATH
+#
+#export GLM_INCLUDE_DIR=/usr/include/glm
+#export GLFW_DIR=/home/joncatanio/lib/glfw-3.2.1
+#export GLEW_DIR=/usr

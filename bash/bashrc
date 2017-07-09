@@ -2,7 +2,7 @@
 WIFI_PORT='en0'
 
 # NOTE: --color may not be necessary for Mac OS X
-#alias ls='ls -FG --color'
+alias ls='ls -FG --color'
 
 # Server Alias's
 # Unix 1-4 are 32-Bit Servers
@@ -24,9 +24,12 @@ alias wifi="networksetup -setairportpower $WIFI_PORT"
 #export LSCOLORS=gxBxhxDxcxhxhxhxhxcxcx
 
 # On linux set up dir_colors symlink and this will use it if it finds one.
-#if [ -f ~/.dir_colors ]; then
-#   eval `dircolors ~/.dir_colors`
-#fi
+if [ -f ~/.dir_colors ]; then
+   eval `dircolors ~/.dir_colors`
+fi
 
 # Transfer script alias, input path.
 alias transfer=""
+
+# Commands on startup
+screenfetch
