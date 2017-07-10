@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Unlink all symbolic links
+unlink ~/.vimrc
+unlink ~/.vim/syntax/coffee.vim
+unlink ~/.vim/ftdetect/coffee.vim
+unlink ~/.vim/after/ftplugin/python.vim
+unlink ~/.vim/autoload/plug.vim
+
+unlink ~/.bash_profile
+unlink ~/.bashrc
+
+if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
+   :
+elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
+   unlink ~/.dir_colors
+   unlink ~/.Xresources
+fi

@@ -7,6 +7,7 @@ ln -s ~/dotfiles/vim/vimrc ~/.vimrc
 mkdir -p ~/.vim/syntax
 mkdir -p ~/.vim/ftdetect
 mkdir -p ~/.vim/after/ftplugin
+mkdir -p ~/.vim/autoload
 
 # Vim: Set up CoffeeScript syntax highlighting for vim.
 ln -s ~/dotfiles/vim/syntax/coffee.vim ~/.vim/syntax/coffee.vim
@@ -14,6 +15,11 @@ ln -s ~/dotfiles/vim/ftdetect/coffee.vim ~/.vim/ftdetect/coffee.vim
 
 # Vim: Set up Python overriding features
 ln -s ~/dotfiles/vim/after/ftplugin/python.vim ~/.vim/after/ftplugin/python.vim
+
+# Vim: Install plugin manager
+curl -fLo ~/dotfiles/vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+ln -s ~/dotfiles/vim/autoload/plug.vim ~/.vim/autoload/plug.vim
 
 # Bash: Set up bash links.
 ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
