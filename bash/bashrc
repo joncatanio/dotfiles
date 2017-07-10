@@ -28,3 +28,6 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
       eval `dircolors ~/.dir_colors`
    fi
 fi
+
+# Start-up commands
+screenfetch
