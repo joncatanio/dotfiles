@@ -1,4 +1,4 @@
-source ~/.bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # Git branch in prompt
 parse_git_branch() {
