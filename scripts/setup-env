@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Vim: Set up environment
+ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+
+# Vim: Setup necessary .vim directories if they don't exist.
+mkdir -p ~/.vim/syntax
+mkdir -p ~/.vim/ftdetect
+mkdir -p ~/.vim/after/ftplugin
+
+# Vim: Set up CoffeeScript syntax highlighting for vim.
+ln -s ~/dotfiles/vim/syntax/coffee.vim ~/.vim/syntax/coffee.vim
+ln -s ~/dotfiles/vim/ftdetect/coffee.vim ~/.vim/ftdetect/coffee.vim
+
+# Vim: Set up Python overriding features
+ln -s ~/dotfiles/vim/after/ftplugin/python.vim ~/.vim/after/ftplugin/python.vim
+
+# Bash: Set up bash links.
+ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
+ln -s ~/dotfiles/bash/bashrc ~/.bashrc
+
+# Distribution specific setup
+if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
+   :
+elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
+   ln -s ~/dotfiles/bash/DIR_COLORS ~/.dir_colors
+   ln -s ~/dotfiles/bash/Xresources ~/.Xresources
+fi
