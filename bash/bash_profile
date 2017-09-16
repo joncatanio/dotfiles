@@ -8,18 +8,18 @@ parse_git_branch() {
 export PS1="\u@\h \w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
-   export PATH=$PATH:/Users/JonCatanio/Library/Android/sdk/platform-tools
+   export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 
    # Graphics env variables
    export GLM_INCLUDE_DIR=/usr/local/Cellar/glm/0.9.8.1/include
-   export GLFW_DIR=/Users/JonCatanio/open-source-bin/glfw-3.2.1
+   export GLFW_DIR=$HOME/open-source-bin/glfw-3.2.1
    export GLEW_DIR=/usr/local/Cellar/glew/2.0.0
 
    # Audio Api Variables
-   export FMOD_DIR=/Users/JonCatanio/open-source-bin/FMOD_API
+   export FMOD_DIR=$HOME/open-source-bin/FMOD_API
 
    # Custom Python3 Paths
-   export PYTHONPATH=${PYTHONPATH}:/Users/JonCatanio/Projects/SearchEngine/
+   export PYTHONPATH=${PYTHONPATH}:$HOME/Projects/SearchEngine/
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
    :
 fi
