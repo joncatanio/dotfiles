@@ -23,3 +23,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
    :
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
