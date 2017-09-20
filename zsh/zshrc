@@ -26,6 +26,7 @@ ZSH_THEME="spaceship"
 
 # Spaceship theme configurations
 # Prompt
+SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_BATTERY_SHOW=false
 
 # Directory
