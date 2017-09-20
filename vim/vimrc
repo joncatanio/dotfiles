@@ -29,6 +29,9 @@ set mouse=a        " Enable mouse
 syntax on   " Enable syntax highlighting
 colorscheme molokai
 let g:molokai_original=1
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+hi Visual ctermbg=015 ctermfg=232
 
 set nowrap        " Lines don't wrap
 set expandtab     " Tabs become spaces
@@ -56,10 +59,10 @@ set listchars=tab:\ \ ,trail:·,extends:▶
 autocmd filetype make set tabstop=3 shiftwidth=3 softtabstop=0 noexpandtab
 
 " Custom Plugin settings
-" vim-airline
-let g:airline_theme='tomorrow'
+" vim-airline settings
+let g:airline_theme='bubblegum'
 let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#syntastic#enabled=1
+"let g:airline#extensions#syntastic#enabled=1
 let g:airline_powerline_fonts=1 " Make sure powerline fonts are installed
 
 " syntastic
