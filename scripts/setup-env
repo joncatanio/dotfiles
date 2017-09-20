@@ -35,7 +35,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
    # Install Homebrew
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
    brew update
-   brew install screenfetch fortune cowsay lolcat
+   brew install screenfetch fortune cowsay lolcat rbenv ruby python3
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
    ln -s ~/dotfiles/bash/DIR_COLORS ~/.dir_colors
    ln -s ~/dotfiles/bash/Xresources ~/.Xresources

@@ -31,9 +31,6 @@ SPACESHIP_BATTERY_SHOW=false
 # Directory
 SPACESHIP_DIR_TRUNC=1
 
-# Git Branch
-SPACESHIP_GIT_BRANCH_COLOR=green
-
 # RUST
 SPACESHIP_RUST_SYMBOL="⚙️  "
 
@@ -82,5 +79,9 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
 fi
 
 # Startup commands
+if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
+   eval "$(rbenv init -)"
+fi
+
 #screenfetch -E
 fortune | cowsay -f moose | lolcat
