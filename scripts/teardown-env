@@ -11,7 +11,8 @@ unlink ~/.bash_profile
 unlink ~/.bashrc
 
 if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
-   :
+   # Remove Homebrew entirely
+   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
    unlink ~/.dir_colors
    unlink ~/.Xresources

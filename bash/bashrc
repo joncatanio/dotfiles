@@ -30,4 +30,5 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
 fi
 
 # Start-up commands
-screenfetch
+#screenfetch
+fortune | cowsay -f moose | lolcat

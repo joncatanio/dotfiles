@@ -27,7 +27,9 @@ ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 
 # Distribution specific setup
 if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
-   :
+   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   brew update
+   brew install screenfetch fortune cowsay lolcat
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
    ln -s ~/dotfiles/bash/DIR_COLORS ~/.dir_colors
    ln -s ~/dotfiles/bash/Xresources ~/.Xresources
