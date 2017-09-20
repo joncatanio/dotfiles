@@ -10,8 +10,6 @@ export ZSH=/Users/JonCatanio/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 # Prompt
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_BATTERY_SHOW=false
 
 # Directory
@@ -19,6 +17,9 @@ SPACESHIP_DIR_TRUNC=1
 
 # Git Branch
 SPACESHIP_GIT_BRANCH_COLOR=green
+
+# RUST
+SPACESHIP_RUST_SYMBOL="⚙️  "
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -102,3 +103,36 @@ alias calpolyU4="ssh jcatanio@unix4.csc.calpoly.edu"
 alias calpolyU5="ssh jcatanio@unix5.csc.calpoly.edu"
 # JSON formatting utility
 alias prettyjson="python3 -m json.tool"
+#
+# Distribution specific definitions
+if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
+   # Wifi alias on/off
+   WIFI_PORT='en0'
+   alias wifi="networksetup -setairportpower $WIFI_PORT"
+elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
+   :
+fi
+
+# Environment Variables
+if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
+   export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
+
+   # Graphics env variables
+   export GLM_INCLUDE_DIR=/usr/local/Cellar/glm/0.9.8.1/include
+   export GLFW_DIR=$HOME/open-source-bin/glfw-3.2.1
+   export GLEW_DIR=/usr/local/Cellar/glew/2.0.0
+
+   # Audio Api Variables
+   export FMOD_DIR=$HOME/open-source-bin/FMOD_API
+
+   # Custom Python3 Paths
+   export PYTHONPATH=${PYTHONPATH}:$HOME/Projects/SearchEngine/
+elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
+   :
+fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Startup commands
+#screenfetch -E
+fortune | cowsay -f moose | lolcat
