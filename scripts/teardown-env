@@ -10,6 +10,9 @@ unlink ~/.vim/autoload/plug.vim
 unlink ~/.bash_profile
 unlink ~/.bashrc
 
+unlink ~/.zshrc
+uninstall_oh_my_zsh
+
 if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
    # Remove Homebrew entirely
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"

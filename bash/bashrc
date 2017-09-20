@@ -1,4 +1,4 @@
-# Server Alias's
+# Server Aliases
 # Unix 1-4 are 64-Bit Servers
 alias calpolyU1='ssh jcatanio@unix1.csc.calpoly.edu'
 alias calpolyU2='ssh jcatanio@unix2.csc.calpoly.edu'

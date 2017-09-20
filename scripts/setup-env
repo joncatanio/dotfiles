@@ -25,8 +25,13 @@ ln -s ~/dotfiles/vim/autoload/plug.vim ~/.vim/autoload/plug.vim
 ln -s ~/dotfiles/bash/bash_profile ~/.bash_profile
 ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 
+# ZSH: Set up ZSH links.
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+
 # Distribution specific setup
 if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
+   # Install Homebrew
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
    brew update
    brew install screenfetch fortune cowsay lolcat
