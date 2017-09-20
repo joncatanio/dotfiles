@@ -27,6 +27,7 @@ ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 
 # ZSH: Set up ZSH links.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 
 # Distribution specific setup
