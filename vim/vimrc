@@ -75,3 +75,6 @@ let g:airline_powerline_fonts=1 " Make sure powerline fonts are installed
 "hi SyntasticWarning     ctermfg=231 ctermbg=226
 "hi SyntasticErrorSign   ctermfg=123 ctermbg=123
 "hi SyntasticWarningSign ctermfg=123 ctermbg=123
+
+" Open markdown files with Chrome.
+ autocmd BufEnter *.md exe 'noremap <F5> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>'
