@@ -4,7 +4,7 @@
 " Start vim-plug code
 call plug#begin('~/.vim/plugged')
 
-Plug 'tomasr/molokai'                      " Molokai color scheme
+Plug 'morhetz/gruvbox'                     " Gruvbox color scheme
 Plug 'tpope/vim-fugitive'                  " Git wrapper for vim
 Plug 'vim-airline/vim-airline'             " Lightweight status/tabline
 Plug 'vim-airline/vim-airline-themes'      " Themes for vim-airline
@@ -19,29 +19,25 @@ call plug#end()
 filetype indent off
 
 " Custom VIM settings
-set title      " change the terminal title
+set title          " change the terminal title
 
 set laststatus=2   " Show status line
 set number         " Show line number on cursor
 set relativenumber " Show relative line numbers
 set mouse=a        " Enable mouse
 
-syntax on   " Enable syntax highlighting
-colorscheme molokai
-let g:molokai_original=1
-hi Normal ctermbg=none
-hi NonText ctermbg=none
-hi Visual ctermbg=015 ctermfg=232
+syntax on          " Enable syntax highlighting
+colorscheme gruvbox
 
-set nowrap        " Lines don't wrap
-set expandtab     " Tabs become spaces
-set shiftwidth=3  " Shifts only shift three spaces
-set softtabstop=0 " If non-zero, makes the <TAB> & <BS> keys feel like tabs
-set tabstop=3     " Tabs stop at three characters
+set nowrap         " Lines don't wrap
+set expandtab      " Tabs become spaces
+set shiftwidth=3   " Shifts only shift three spaces
+set softtabstop=0  " If non-zero, makes the <TAB> & <BS> keys feel like tabs
+set tabstop=3      " Tabs stop at three characters
 set backspace=indent,eol,start " Backspace over everything in insert mode
-set autoindent    " Auto indent
-set copyindent    " Use last line indentation, affects <BR> key
-set smarttab      " Insert new line tabs based on shiftwidth not tabstop
+set autoindent     " Auto indent
+set copyindent     " Use last line indentation, affects <BR> key
+set smarttab       " Insert new line tabs based on shiftwidth not tabstop
 
 set ruler          " Shows the ruler at the bottom of the window
 set colorcolumn=80 " Draws column at 80 characters
@@ -60,7 +56,7 @@ autocmd filetype make set tabstop=3 shiftwidth=3 softtabstop=0 noexpandtab
 
 " Custom Plugin settings
 " vim-airline settings
-let g:airline_theme='bubblegum'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled=1
 "let g:airline#extensions#syntastic#enabled=1
 let g:airline_powerline_fonts=1 " Make sure powerline fonts are installed
@@ -77,4 +73,4 @@ let g:airline_powerline_fonts=1 " Make sure powerline fonts are installed
 "hi SyntasticWarningSign ctermfg=123 ctermbg=123
 
 " Open markdown files with Chrome.
- autocmd BufEnter *.md exe 'noremap <F5> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>'
+autocmd BufEnter *.md exe 'noremap <F5> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>'
