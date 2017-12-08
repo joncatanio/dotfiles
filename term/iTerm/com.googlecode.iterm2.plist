@@ -73,15 +73,15 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>92 370 228 297 0 0 1280 777 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>613 116 445 77 0 0 1280 777 </string>
+	<string>3162 -799 445 77 1280 -892 3008 1669 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1690 -152 620 392 1280 -1760 1440 2537 </string>
+	<string>2890 -52 620 392 1280 -1360 3840 2137 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>88 154 796 473 0 0 1280 777 </string>
+	<string>385 105 770 429 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1698 -759 570 426 1280 -1760 1440 2537 </string>
+	<string>355 181 598 426 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1721 -1153 570 426 1280 -1760 1440 2537 </string>
+	<string>189 -44 598 426 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -240,13 +240,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.21176470588235294</real>
+				<real>0.5</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.21176470588235294</real>
+				<real>0.5</real>
 				<key>Red Component</key>
-				<real>0.21176470588235294</real>
+				<real>0.5</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -268,7 +268,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>84</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -898,7 +898,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>84</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -1412,7 +1412,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-25T03:11:16Z</date>
+	<date>2017-12-07T19:53:01Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1425,8 +1425,10 @@
 	<integer>0</integer>
 	<key>UseBorder</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.2</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
