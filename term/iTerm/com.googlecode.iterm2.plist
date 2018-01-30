@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AdjustWindowForFontSizeChange</key>
+	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -77,11 +79,17 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>2890 -52 620 392 1280 -1360 3840 2137 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>385 105 770 429 0 0 1280 800 </string>
+	<string>273 190 918 512 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>355 181 598 426 0 0 1280 800 </string>
+	<string>156 173 843 436 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>189 -44 598 426 0 0 1280 800 </string>
+	<string>0 214 899 586 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>158 214 899 586 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>1834 -1050 598 426 1280 -1360 3840 2160 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>1855 -1073 598 426 1280 -1360 3840 2160 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -240,13 +248,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.5</real>
+				<real>0.87328928709030151</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.5</real>
+				<real>0.86714577674865723</real>
 				<key>Red Component</key>
-				<real>0.5</real>
+				<real>0.87344187498092651</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -1321,6 +1329,19 @@
 			<false/>
 			<key>Sync Title</key>
 			<false/>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.16078431372549021</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.16078431372549021</real>
+				<key>Red Component</key>
+				<real>0.16078431372549021</real>
+			</dict>
 			<key>Tags</key>
 			<array/>
 			<key>Terminal Type</key>
@@ -1338,6 +1359,8 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
+			<false/>
+			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
@@ -1412,15 +1435,17 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-12-07T19:53:01Z</date>
+	<date>2018-01-30T19:21:09Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>TabStyle</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>UseBorder</key>
