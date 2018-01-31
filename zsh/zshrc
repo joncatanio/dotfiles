@@ -39,9 +39,7 @@ SPACESHIP_BATTERY_SHOW=false
 
 # Directory
 SPACESHIP_DIR_TRUNC=1
-
-# RUST
-SPACESHIP_RUST_SYMBOL="⚙️  "
+SPACESHIP_DIR_TRUNC_REPO=false
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
