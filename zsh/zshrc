@@ -90,5 +90,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then # MacOS
    eval "$(rbenv init -)"
 fi
 
+# Optional startup commands
 #screenfetch -E
-fortune | cowsay -f moose | lolcat
+#fortune | cowsay -f moose | lolcat
