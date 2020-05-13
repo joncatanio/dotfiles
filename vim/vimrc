@@ -8,15 +8,18 @@ Plug 'morhetz/gruvbox'                     " Gruvbox color scheme
 Plug 'tpope/vim-fugitive'                  " Git wrapper for vim
 Plug 'vim-airline/vim-airline'             " Lightweight status/tabline
 Plug 'vim-airline/vim-airline-themes'      " Themes for vim-airline
-"Plug 'scrooloose/syntastic'            " Syntax checking
+"Plug 'scrooloose/syntastic'               " Syntax checking
+Plug 'scrooloose/nerdtree'                 " Filesystem tree explorer
 Plug 'jiangmiao/auto-pairs'                " Completes character pairs
 Plug 'rust-lang/rust.vim', {'for': 'rust'} " Rust file detection and more
+Plug 'pangloss/vim-javascript'             " JS indentation/syntax support
+Plug 'mxw/vim-jsx'                         " JSX syntax highlighting
 
 " Initialize plugin system
 call plug#end()
 
 " vim-plug sets filetype, plugin, and indent; turn off indent
-filetype indent off
+" filetype indent off
 
 " Custom VIM settings
 set title          " change the terminal title
@@ -31,7 +34,7 @@ colorscheme gruvbox
 
 set nowrap         " Lines don't wrap
 set expandtab      " Tabs become spaces
-set shiftwidth=3   " Shifts only shift three spaces
+set shiftwidth=4   " Shifts only shift three spaces
 set softtabstop=0  " If non-zero, makes the <TAB> & <BS> keys feel like tabs
 set tabstop=3      " Tabs stop at three characters
 set backspace=indent,eol,start " Backspace over everything in insert mode
