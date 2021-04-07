@@ -25,3 +25,7 @@ elif [[ "$OSTYPE" == "linux-gnu" ]]; then # Linux
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/jonathan.catanio/.sdkman"
+[[ -s "/Users/jonathan.catanio/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/jonathan.catanio/.sdkman/bin/sdkman-init.sh"
