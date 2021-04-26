@@ -9,13 +9,6 @@ mkdir -p ~/.vim/ftdetect
 mkdir -p ~/.vim/after/ftplugin
 mkdir -p ~/.vim/autoload
 
-# Vim: Set up CoffeeScript syntax highlighting for vim.
-ln -s ~/dotfiles/vim/syntax/coffee.vim ~/.vim/syntax/coffee.vim
-ln -s ~/dotfiles/vim/ftdetect/coffee.vim ~/.vim/ftdetect/coffee.vim
-
-# Vim: Set up Python overriding features
-ln -s ~/dotfiles/vim/after/ftplugin/python.vim ~/.vim/after/ftplugin/python.vim
-
 # Vim: Install plugin manager
 curl -fLo ~/dotfiles/vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -27,7 +20,8 @@ ln -s ~/dotfiles/bash/bashrc ~/.bashrc
 
 # ZSH: Set up ZSH links.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-curl -o - https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh | zsh
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme" 
 ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
 
 # Distribution specific setup

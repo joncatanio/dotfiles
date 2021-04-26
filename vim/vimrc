@@ -31,6 +31,7 @@ set mouse=a        " Enable mouse
 
 syntax on          " Enable syntax highlighting
 colorscheme gruvbox
+set bg=dark
 
 set nowrap         " Lines don't wrap
 set expandtab      " Tabs become spaces
